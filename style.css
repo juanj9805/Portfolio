@@ -26,6 +26,10 @@
   --standard-width: 1300px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--body-font);
   margin: 0;
@@ -331,7 +335,7 @@ h2 {
   height: 250px;
   transform: rotate(40deg);
   bottom: -50px;
-  right: -60px; /* part of the image is outside the container */
+  right: 0; /* part of the image is outside the container */
   z-index: 1;
   transition: 2s ease;
 }
@@ -346,14 +350,15 @@ h2 {
   height: 600px;
   transform: rotate(-14deg);
   bottom: -200px;
-  right: -160px; /* part of the image is outside the container */
+  right: 0; /* part of the image is outside the container */
   z-index: 1;
   transition: 3s ease;
 }
 
+/* 
 .cupula-draw:hover {
   transform: translateX(200px);
-}
+} */
 
 .complete-draw-church {
   position: absolute;
@@ -420,7 +425,7 @@ h2 {
 .grid-projects .two-column {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
   padding: 0 32px;
 }
@@ -428,7 +433,7 @@ h2 {
 .grid-projects .two-column .col-left {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   /* margin: 0 4px 0 32px; */
   padding: 0 12px 0 0;
   /* height: 90%; */
@@ -449,7 +454,7 @@ h2 {
 .grid-projects .two-column .col-right {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  /* width: 50%; */
   padding: 0 0 0 12px;
   /* position: relative; */
 }
@@ -470,7 +475,7 @@ h2 {
 
 .grid-projects .project .img-project {
   width: 100%;
-  height: 60%;
+  height: 80%;
   margin: 12px 0;
 }
 
@@ -480,5 +485,5 @@ h2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 22px;
+  margin: 16px 12px;
 }
