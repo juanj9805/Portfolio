@@ -21,18 +21,20 @@
   /* Layouts */
   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
   --standard-transition: 2s ease-in-out;
-  --standard-radius: 10px;
+  --standard-border-radius: 10px;
   --max-width: 1300px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+/* GLOBAL ELEMENTS */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,6 +49,14 @@ body {
   align-items: center;
 }
 
+h2 {
+  font-size: var(--font-size-xl);
+  color: var(--color-light);
+  margin: 32px 0;
+}
+
+/* NAV */
+
 nav {
   box-shadow: var(--standard-box-shadow);
   background-color: var(--color-light);
@@ -60,7 +70,6 @@ nav {
   position: fixed;
   z-index: 3;
   top: 0;
-  box-shadow: var(--standard-box-shadow);
 }
 
 nav ul {
@@ -82,15 +91,28 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+/* MAIN */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url(assets/background-wooden.png);
-  background-repeat: no-repeat;
+  background: url(assets/background-wooden.png) center/cover no-repeat;
+}
+
+/* HOME SECTION */
+
+.home-section {
+  width: 100%;
+  height: 100vh;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home-section::before,
@@ -99,7 +121,6 @@ main {
   position: absolute;
   left: 0;
   height: 2.5%;
-  /* z-index: -2; */
 }
 
 .home-section::after {
@@ -125,7 +146,6 @@ main {
 }
 
 .home-section .info {
-  /* font-family: va; */
   display: flex;
   flex-direction: column;
 }
@@ -150,43 +170,10 @@ main {
   display: flex;
   justify-content: flex-start;
 }
+
 .home-section .role {
   display: flex;
   justify-content: flex-end;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 300px;
-  height: 200px;
-}
-
-.draw-church {
-  position: absolute;
-  width: 25%;
-  /* height: 40%; */
-  transform: rotate(6deg);
-  transition: var(--standard-transition);
-  bottom: -160px;
-  left: -80px; /* part of the image is outside the container */
-  z-index: 1;
-}
-
-.draw-church:hover {
-  transform: translateX(-200px);
-}
-
-.home-section {
-  width: 100%;
-  height: 100vh;
-  max-width: var(--max-width);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home-section .buttons {
@@ -202,8 +189,7 @@ main {
   font-family: var(--heading-font);
   font-weight: 700;
   color: var(--color-light);
-  /* border: transparent; */
-  border-radius: 10px;
+  border-radius: var(--standard-border-radius);
   padding: 12px;
   width: 150px;
   margin: 0 22px 22px 0;
@@ -235,6 +221,22 @@ main {
   color: var(--color-accent);
 }
 
+.draw-church {
+  position: absolute;
+  width: 25%;
+  transform: rotate(6deg);
+  transition: var(--standard-transition);
+  bottom: -160px;
+  left: -80px;
+  z-index: 1;
+}
+
+.draw-church:hover {
+  transform: translateX(-200px);
+}
+
+/* ABOUT SECTION */
+
 .about-section {
   width: 100%;
   height: 90vh;
@@ -263,7 +265,7 @@ main {
   height: 250px;
   transform: rotate(-90deg);
   bottom: -200px;
-  left: -160px; /* part of the image is outside the container */
+  left: -160px;
   z-index: 1;
   transition: var(--standard-transition);
 }
@@ -272,19 +274,12 @@ main {
   opacity: 0;
 }
 
-h2 {
-  font-size: var(--font-size-xl);
-  color: var(--color-light);
-}
-
 .papper-about-section {
   width: 80%;
   height: 50vh;
   position: relative;
-  border-radius: 20px;
-  background-image: url(assets/papper.png);
-  background-size: cover;
-  background-position: center;
+  border-radius: var(--standard-border-radius);
+  background: url(assets/papper.png) center/cover no-repeat;
 }
 
 .two-column {
@@ -320,6 +315,8 @@ h2 {
   line-height: 1.3;
 }
 
+/* PROJECTS SECTION */
+
 .projects-section {
   width: 100%;
   height: 100vh;
@@ -330,62 +327,6 @@ h2 {
   position: relative;
 }
 
-.projects-section .coffe {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  transform: rotate(40deg);
-  bottom: -50px;
-  right: 0; /* part of the image is outside the container */
-  z-index: 1;
-  transition: var(--standard-transition);
-}
-
-.projects-section .coffe:hover {
-  opacity: 0;
-}
-
-.cupula-draw {
-  position: absolute;
-  width: 25%;
-  bottom: 0;
-  right: 0; /* part of the image is outside the container */
-  z-index: 1;
-  transition: 1s ease-in-out;
-}
-
-.cupula-draw:hover {
-  transform: rotate(-6deg) scale(1.1, 1.1);
-}
-
-footer .complete-draw-church {
-  width: 100%;
-}
-
-@media (width<= 1000px) {
-  .cupula-draw {
-    width: 450px;
-    height: 450px;
-    transform: rotate(-6deg);
-  }
-
-  .draw-church {
-    width: 300px;
-    width: 300px;
-  }
-}
-
-footer {
-  background-color: var(--color-main);
-  width: 100%;
-  height: 12vh;
-  display: flex;
-  z-index: 1;
-  color: var(--color-light);
-  font-size: var(--font-size-md);
-  font-family: var(--body-font);
-}
-
 .grid-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -394,46 +335,9 @@ footer {
   max-width: var(--max-width);
 }
 
-.grid-projects .two-column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0 32px;
-}
-
-.grid-projects .two-column .col-left {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  /* margin: 0 4px 0 32px; */
-  padding: 0 12px 0 0;
-  /* height: 90%; */
-}
-
-.grid-projects .two-column .col-left .img-technologie {
-  width: 50px;
-  height: 50px;
-  /* margin:  0; */
-}
-
-.grid-projects .project-paper-decoration {
-  position: absolute;
-  left: -6%;
-  top: 8%;
-}
-
-.grid-projects .two-column .col-right {
-  display: flex;
-  flex-direction: column;
-  /* width: 50%; */
-  padding: 0 0 0 12px;
-  /* position: relative; */
-}
-
 .project {
   background-image: url(assets/papper.png);
-  border-radius: 10px;
+  border-radius: var(--standard-border-radius);
   width: 100%;
   height: 50vh;
   display: flex;
@@ -468,6 +372,105 @@ footer {
   height: 50px;
 }
 
+.grid-projects .two-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 32px;
+}
+
+.grid-projects .two-column .col-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 0 12px 0 0;
+}
+
+.grid-projects .two-column .col-left .img-technologie {
+  width: 50px;
+  height: 50px;
+  /* margin:  0; */
+}
+
+.grid-projects .project-paper-decoration {
+  position: absolute;
+  left: -8%;
+  top: 8%;
+}
+
+.grid-projects .two-column .col-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 12px;
+}
+
+.projects-section .coffe {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  transform: rotate(40deg);
+  bottom: -50px;
+  right: 0;
+  z-index: 1;
+  transition: var(--standard-transition);
+}
+
+.projects-section .coffe:hover {
+  opacity: 0;
+}
+
+.cupula-draw {
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
+
+.cupula-draw:hover {
+  transform: rotate(-6deg) scale(1.1, 1.1);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--color-main);
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  z-index: 1;
+  color: var(--color-light);
+  font-size: var(--font-size-md);
+  font-family: var(--body-font);
+}
+
+footer .complete-draw-church {
+  width: 100%;
+}
+
+/* Chore 
+
+✅ Also add more breakpoints:
+
+@media (max-width: 768px) for tablets
+
+@media (max-width: 480px) for phones */
+
+@media (max-width: 1000px) {
+  .cupula-draw {
+    width: 450px;
+    height: 450px;
+    transform: rotate(-6deg);
+  }
+
+  .draw-church {
+    width: 300px;
+    width: 300px;
+  }
+}
+
 footer .left {
   width: 50%;
 }
@@ -481,3 +484,12 @@ footer .left .complete-draw-church {
   width: 100%;
   height: 100%;
 }
+
+/* Chore
+🚀 4. Optional Enhancements
+Improvement	Why it helps
+Add :root theme variables for spacing (like --spacing-md)	Makes layout spacing consistent
+Use rem units for paddings/margins instead of px	Improves scalability
+Add :hover for .project cards	Increases interactivity
+Use clamp() for typography	Adapts text naturally across devices
+Use CSS Grid or Flexbox more for sections	Reduces absolute positioning and increases responsiveness */
