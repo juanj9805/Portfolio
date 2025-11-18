@@ -46,7 +46,6 @@ body {
   font-family: var(--body-font);
   margin: 0;
   width: 100%;
-  background: url("assets/background-section.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,10 +81,11 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav ul li a {
   color: var(--color-main);
   font-family: var(--heading-font);
   font-size: var(--font-size-md);
+  text-decoration: none;
 }
 
 nav ul li:hover {
@@ -179,14 +179,11 @@ main {
 .home-section {
   width: 100%;
   height: 100vh;
-  max-width: var(--max-width);
+  background: url(assets/background-section.png) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .home-section .buttons {
@@ -211,6 +208,15 @@ main {
   box-sizing: border-box;
 }
 
+.home-section .buttons button a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+.home-section .buttons button a:hover {
+  color: var(--color-main);
+}
+
 .home-section .buttons button:hover {
   background-color: transparent;
   cursor: pointer;
@@ -223,7 +229,7 @@ main {
 
 .home-section .buttons .btn-contact:hover {
   border: 3px solid var(--color-main);
-  color: var(--color-main);
+  color: var(--color-accent);
 }
 
 .home-section .buttons .btn-download-cv {
@@ -253,18 +259,28 @@ main {
 
 .about-section {
   width: 100%;
-  height: 90vh;
-  max-width: var(--max-width);
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
 }
 
+.about-section::after {
+  content: "";
+  width: 100%;
+  height: 80vh;
+  background: url(assets/background-wooden.png);
+  position: absolute;
+  top: calc(var(--spacing-xl));
+  left: 0;
+  z-index: -1;
+}
+
 .about-section h2 {
   margin: var(--spacing-lg) 0;
-  color: var(--color-main);
+  color: var(--color-light);
 }
 
 .papper-decoration {
@@ -281,7 +297,6 @@ main {
   transform: rotate(-90deg);
   bottom: calc(var(--spacing-xl) * -3);
   left: calc(var(--spacing-xl) * -3);
-  z-index: 1;
   transition: var(--standard-transition);
 }
 
@@ -291,7 +306,8 @@ main {
 
 .papper-about-section {
   width: 100%;
-  height: 55vh;
+  height: 50vh;
+  max-width: var(--max-width);
   position: relative;
   border-radius: var(--standard-border-radius);
   background: url(assets/papper.png) center/cover no-repeat;
@@ -335,7 +351,7 @@ main {
 
 .projects-section {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -343,21 +359,31 @@ main {
   position: relative;
 }
 
-.projects-section h2 {
-  color: var(--color-light);
-  margin: 0 0 var(--spacing-lg) 0;
+.projects-section::before,
+.projects-section::after {
+  content: "";
+  position: absolute;
+  height: 5%;
+  z-index: -2;
 }
 
 .projects-section::after {
-  content: "";
-  width: 100%;
-  height: 120vh;
-  background: url(assets/background-wooden.png);
-  transform: skewY(-4deg);
-  position: absolute;
-  top: calc(var(--spacing-xl) * -8);
+  background-color: var(--color-neutral);
+  right: 0;
+  width: 40%;
+  top: 12%;
+}
+
+.projects-section::before {
+  background-color: var(--color-accent);
   left: 0;
-  z-index: -1;
+  width: 60%;
+  top: 88%;
+}
+
+.projects-section h2 {
+  color: var(--color-main);
+  margin: 0 0 var(--spacing-lg) 0;
 }
 
 .projects-section .coffe {
@@ -374,7 +400,8 @@ main {
 .projects-section .coffe:hover {
   opacity: 0;
 }
-*/ .cupula-draw {
+
+.cupula-draw {
   position: absolute;
   width: 25%;
   bottom: 0;
@@ -416,6 +443,7 @@ footer {
 }
 
 .grid-projects {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -444,25 +472,16 @@ footer {
   /* margin:  0; */
 }
 
-.grid-projects .project-paper-decoration {
-  position: absolute;
-  left: -6%;
-  top: 8%;
-}
-
 .project {
-  background-image: url(assets/papper.png);
+  background-color: #3e4d48;
+  color: var(--color-light);
   border-radius: var(--standard-border-radius);
   width: 100%;
-  height: 50vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: var(--spacing-md) var(--spacing-md) var(--spacing-md)
     var(--spacing-lg);
-  z-index: 2;
-  position: relative;
 }
 
 .grid-projects .project .img-project {
@@ -486,6 +505,12 @@ footer {
 .logos img {
   width: calc(var(--spacing-lg) * 1.5);
   height: calc(var(--spacing-lg) * 1.5);
+  filter: grayscale(100%);
+}
+
+.logos img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
 }
 
 .grid-projects .two-column {
