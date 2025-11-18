@@ -271,7 +271,7 @@ main {
   content: "";
   width: 100%;
   height: 80vh;
-  background: url(assets/background-wooden.png);
+  background: url(assets/background-wooden.png) center/cover no-repeat;
   position: absolute;
   top: calc(var(--spacing-xl));
   left: 0;
@@ -295,8 +295,8 @@ main {
   width: calc(var(--spacing-xl) * 4);
   height: calc(var(--spacing-xl) * 4);
   transform: rotate(-90deg);
-  bottom: calc(var(--spacing-xl) * -3);
-  left: calc(var(--spacing-xl) * -3);
+  bottom: calc(var(--spacing-xl));
+  left: calc(var(--spacing-xl) * -2);
   transition: var(--standard-transition);
 }
 
