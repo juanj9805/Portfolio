@@ -105,6 +105,7 @@ nav ul li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .home-section::before,
@@ -165,31 +166,22 @@ nav ul li:hover {
   position: absolute;
   bottom: 0;
 }
-.home-section .buttons button {
+.home-section .buttons a {
   font-family: var(--heading-font);
   font-weight: 700;
   color: var(--color-light);
   /* border: transparent; */
   border-radius: var(--standard-border-radius);
   padding: var(--spacing-sm);
-  width: calc(var(--spacing-xl) * 2.5);
   margin: 0 var(--spacing-md) var(--spacing-md) 0;
   transition: 0.3s ease-in-out;
   box-sizing: border-box;
-}
-
-.home-section .buttons button:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.home-section .buttons button a {
-  color: var(--color-light);
   text-decoration: none;
 }
 
-.home-section .buttons button a:hover {
-  color: var(--color-main);
+.home-section .buttons a:hover {
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .home-section .buttons .btn-contact {
@@ -199,7 +191,7 @@ nav ul li:hover {
 
 .home-section .buttons .btn-contact:hover {
   border: 3px solid var(--color-main);
-  color: var(--color-accent);
+  color: var(--color-main);
 }
 
 .home-section .buttons .btn-download-cv {
@@ -253,6 +245,16 @@ main {
   position: absolute;
   top: calc(var(--spacing-xl));
   left: 0;
+  z-index: -1;
+}
+
+.about-section::before {
+  content: "";
+  width: 100%;
+  height: 12%;
+  background-color: var(--color-neutral);
+  position: absolute;
+  top: 0;
   z-index: -1;
 }
 
@@ -318,7 +320,7 @@ main {
   width: 25%;
   bottom: calc(var(--spacing-xl) * -4);
   right: 0;
-  z-index: 1;
+  z-index: 3;
   transition: 1s ease-in-out;
 }
 
@@ -330,10 +332,9 @@ main {
 
 .projects-section {
   width: 100%;
-  height: 80vh;
+  margin: var(--spacing-xl) 0 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
 }
@@ -349,15 +350,13 @@ main {
 .projects-section::after {
   background-color: var(--color-neutral);
   right: 0;
-  width: 40%;
-  top: 12%;
+  width: 30%;
 }
 
 .projects-section::before {
   background-color: var(--color-accent);
   left: 0;
-  width: 60%;
-  top: 88%;
+  width: 30%;
 }
 
 .projects-section h2 {
@@ -366,15 +365,14 @@ main {
 }
 
 .project {
-  background-color: #3e4d48;
+  background-color: var(--color-light);
+  color: var(--color-main);
   border: solid 3px var(--color-main);
-  color: var(--color-light);
   border-radius: var(--standard-border-radius);
   width: 100%;
   height: 20vh;
   padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md)
     var(--spacing-lg);
-  transition: 0.3s ease-in-out;
 }
 
 .project p {
@@ -383,18 +381,7 @@ main {
 
 .project a {
   text-decoration: none;
-  color: var(--color-light);
-}
-
-.project:hover {
   color: var(--color-main);
-  border: solid 3px var(--color-main);
-  background-color: var(--color-light);
-  border-radius: var(--standard-border-radius);
-  width: 100%;
-  height: 20vh;
-  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md)
-    var(--spacing-lg);
 }
 
 .grid-projects {
@@ -404,14 +391,7 @@ main {
   grid-template-rows: 1fr 1fr;
   gap: var(--spacing-lg);
   max-width: var(--max-width);
-}
-
-.grid-projects .two-column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding: 0 var(--spacing-lg);
+  z-index: 2;
 }
 
 .grid-projects .two-column .col-left .img-technologie {
@@ -439,11 +419,11 @@ main {
 
 .logos img {
   width: calc(var(--spacing-lg) * 1);
-  filter: grayscale(100%);
+  filter: opacity(0.5);
 }
 
 .logos img:hover {
-  filter: grayscale(0);
+  filter: opacity();
   cursor: pointer;
 }
 
@@ -460,6 +440,54 @@ main {
   flex-direction: column;
   width: 70%;
   padding: 0 var(--spacing-sm) 0 0;
+}
+
+.moodle-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background: url(assets/background-section.png) center/cover no-repeat;
+}
+
+.moodle-section h2 {
+  color: var(--color-main);
+}
+
+.moodle-section .project {
+  border: solid 3px var(--color-main);
+  color: var(--color-main);
+}
+
+.moodle-section .project a {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.moodle-section::before,
+.moodle-section::after {
+  content: "";
+  position: absolute;
+  height: 12%;
+  z-index: -2;
+  top: -8%;
+  width: 50%;
+  z-index: 1;
+}
+
+.moodle-section::after {
+  background-color: var(--color-accent);
+  right: 0;
+}
+
+.moodle-section::before {
+  background-color: var(--color-neutral);
+  left: 0;
+}
+
+.moodle-section h2 {
+  margin: var(--spacing-lg) 0;
 }
 
 .projects-section .coffe {
@@ -525,6 +553,13 @@ footer img {
 
 /* Responsive */
 
+/* Implement this media queries */
+
+/* @media (max-width: 1200px) { }
+@media (max-width: 992px)  { }
+@media (max-width: 768px)  { }
+@media (max-width: 576px)  { } */
+
 @media (max-width: 1024px) {
   .home-section .info h1 {
     font-size: calc(var(--font-size-xl) * 1.5);
@@ -554,10 +589,6 @@ footer img {
 
   .papper-about-section img {
     width: calc(var(--spacing-xl) * 4.5);
-  }
-
-  .projects-section {
-    height: 115vh;
   }
 
   .projects-section h2 {
