@@ -270,7 +270,13 @@ main {
 
 .about-section h2 {
   margin: var(--spacing-lg) 0;
-  color: var(--color-light);
+  background: #bcaf97;
+  padding: var(--spacing-sm);
+  border-radius: var(--standard-border-radius);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25),
+    /* inner shadow */ 0 3px 6px rgba(0, 0, 0, 0.4); /* outer shadow */
 }
 
 .papper-decoration {
@@ -303,7 +309,7 @@ main {
 
 .papper-about-section .two-column .col-left {
   width: 40%;
-  padding: 0 var(--spacing-md);
+  padding: var(--spacing-md);
 }
 
 .papper-about-section .two-column .col-right {
@@ -536,7 +542,14 @@ main {
 }
 
 .test-section h2 {
-  color: var(--color-light);
+  margin: var(--spacing-lg) 0;
+  background: #bcaf97;
+  padding: var(--spacing-sm);
+  border-radius: var(--standard-border-radius);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25),
+    /* inner shadow */ 0 3px 6px rgba(0, 0, 0, 0.4); /* outer shadow */
 }
 
 /* FOOTER */
