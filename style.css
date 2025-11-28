@@ -71,7 +71,7 @@ nav {
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   top: 0;
 }
 
@@ -100,7 +100,8 @@ nav ul li:hover {
 .home-section {
   width: 100%;
   min-height: 90vh;
-  background: url(assets/background-section.png) center/cover no-repeat;
+  background: url(assets/backgorunds/background-section.png) center/cover
+    no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,7 +242,8 @@ main {
   content: "";
   width: 100%;
   min-height: 70vh;
-  background: url(assets/background-wooden.png) center/cover no-repeat;
+  background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat;
   position: absolute;
   top: calc(var(--spacing-xl));
   left: 0;
@@ -264,7 +266,8 @@ main {
   max-width: var(--max-width);
   position: relative;
   border-radius: var(--standard-border-radius);
-  background: url(assets/papper.png) center/cover no-repeat;
+  background: url(assets/decorations/papper-decoration.png) center/cover
+    no-repeat;
   z-index: 1;
 }
 
@@ -453,7 +456,8 @@ main {
   align-items: center;
   width: 100%;
   position: relative;
-  background: url(assets/background-section.png) center/cover no-repeat;
+  background: url(assets/backgorunds/background-section.png) center/cover
+    no-repeat;
 }
 
 .moodle-section h2 {
@@ -524,11 +528,13 @@ main {
   align-items: center;
   width: 100%;
   position: relative;
-  background: url(assets/background-wooden.png) center/cover no-repeat;
+  background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat;
 }
 
 .test-section .project {
-  background: url(assets/papper.png) center/cover no-repeat;
+  background: url(assets/decorations/papper-decoration.png) center/cover
+    no-repeat;
   border: none;
 }
 
