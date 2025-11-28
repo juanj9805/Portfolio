@@ -64,7 +64,7 @@ nav {
   box-shadow: var(--standard-box-shadow);
   background-color: var(--color-light);
   width: 100%;
-  height: 10vh;
+  min-height: 8vh;
   font-family: var(--heading-font);
   font-weight: 600;
   display: flex;
@@ -99,7 +99,7 @@ nav ul li:hover {
 
 .home-section {
   width: 100%;
-  height: 100vh;
+  min-height: 90vh;
   background: url(assets/background-section.png) center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ nav ul li:hover {
   content: "";
   position: absolute;
   left: 0;
-  height: 2.5%;
+  min-height: 2.5%;
 }
 
 .home-section::after {
@@ -132,7 +132,7 @@ nav ul li:hover {
   content: "";
   position: absolute;
   left: 0;
-  height: 2.5%;
+  min-height: 2.5%;
   background-color: var(--color-neutral);
   width: 18%;
   top: 22%;
@@ -229,7 +229,7 @@ main {
 
 .about-section {
   width: 100%;
-  height: 80vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -240,7 +240,7 @@ main {
 .about-section::after {
   content: "";
   width: 100%;
-  height: 80vh;
+  min-height: 70vh;
   background: url(assets/background-wooden.png) center/cover no-repeat;
   position: absolute;
   top: calc(var(--spacing-xl));
@@ -251,7 +251,7 @@ main {
 .about-section::before {
   content: "";
   width: 100%;
-  height: 12%;
+  min-height: 12%;
   background-color: var(--color-neutral);
   position: absolute;
   top: 0;
@@ -260,7 +260,7 @@ main {
 
 .papper-about-section {
   width: 100%;
-  height: 50vh;
+  min-height: auto;
   max-width: var(--max-width);
   position: relative;
   border-radius: var(--standard-border-radius);
@@ -296,10 +296,8 @@ main {
 
 .two-column {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
@@ -309,8 +307,8 @@ main {
 }
 
 .papper-about-section .two-column .col-right {
-  width: 60%;
-  padding: 0 var(--spacing-xl);
+  width: 100%;
+  padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
   font-size: var(--font-size-sm);
   line-height: 1.3;
 }
@@ -343,7 +341,7 @@ main {
 .projects-section::after {
   content: "";
   position: absolute;
-  height: 5%;
+  min-height: 5%;
   z-index: -2;
 }
 
@@ -370,7 +368,7 @@ main {
   border: solid 3px var(--color-main);
   border-radius: var(--standard-border-radius);
   width: 100%;
-  height: 20vh;
+  height: auto;
   padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md)
     var(--spacing-lg);
 }
@@ -394,10 +392,10 @@ main {
   z-index: 2;
 }
 
-.grid-projects .two-column .col-left .img-technologie {
+.grid-projects .img {
   width: calc(var(--spacing-lg) * 1.5);
-  height: calc(var(--spacing-lg) * 1.5);
-  /* margin:  0; */
+  min-height: calc(var(--spacing-lg) * 1.5);
+  margin: 0 0 0 var(--spacing-md);
 }
 
 .grid-projects .project .img-project {
@@ -413,6 +411,7 @@ main {
 
 .logos {
   width: 100%;
+  margin: var(--spacing-md) 0 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -456,8 +455,16 @@ main {
 }
 
 .moodle-section .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
   border: solid 3px var(--color-main);
   color: var(--color-main);
+}
+
+.moodle-section .grid-projects {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .moodle-section .project a {
@@ -469,7 +476,7 @@ main {
 .moodle-section::after {
   content: "";
   position: absolute;
-  height: 12%;
+  min-height: 12%;
   z-index: -2;
   top: -8%;
   width: 50%;
@@ -505,12 +512,39 @@ main {
   opacity: 0;
 }
 
+.test-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background: url(assets/background-wooden.png) center/cover no-repeat;
+}
+
+.test-section .project {
+  background: url(assets/papper.png) center/cover no-repeat;
+  border: none;
+}
+
+.test-section .grid-projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-lg);
+  max-width: var(--max-width);
+  z-index: 2;
+}
+
+.test-section h2 {
+  color: var(--color-light);
+}
+
 /* FOOTER */
 
 footer {
   background-color: var(--color-main);
   width: 100%;
-  height: 12vh;
+  height: 10vh;
   display: flex;
   z-index: 1;
   color: var(--color-light);
@@ -591,10 +625,6 @@ footer img {
     width: calc(var(--spacing-xl) * 4.5);
   }
 
-  .projects-section h2 {
-    margin: var(--spacing-lg) auto;
-  }
-
   .projects-section::after {
     background-color: var(--color-neutral);
     right: 0;
@@ -649,7 +679,6 @@ footer img {
 
   .papper-about-section {
     width: 80%;
-    height: 60vh;
   }
 
   .about-section .papper-decoration {
@@ -665,6 +694,10 @@ footer img {
     width: calc(var(--spacing-xl) * 3.5);
   }
 
+  .papper-about-section .draw-mine {
+    margin: var(--spacing-md) 0;
+  }
+
   .papper-about-section .two-column {
     flex-direction: column;
     justify-content: space-evenly;
@@ -674,19 +707,6 @@ footer img {
     width: 100%;
     display: flex;
     justify-content: center;
-  }
-
-  .papper-about-section .two-column .col-right {
-    width: 100%;
-    padding: var(--spacing-md) var(--spacing-md) 0 var(--spacing-md);
-  }
-
-  .projects-section {
-    height: 115vh;
-  }
-
-  .projects-section h2 {
-    margin: var(--spacing-lg) auto;
   }
 
   .projects-section::after {
@@ -705,7 +725,6 @@ footer img {
 
   .project {
     width: 100%;
-    height: 20vh;
     padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm)
       var(--spacing-md);
     transition: 0.3s ease-in-out;
@@ -721,6 +740,29 @@ footer img {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
     max-width: var(--max-width);
+  }
+
+  .moodle-section .grid-projects {
+    width: 80%;
+    margin: 0 0 var(--spacing-lg) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .moodle-section .project .logos {
+    display: flex;
+    margin: var(--spacing-md) 0 0 0;
+  }
+
+  .test-section .grid-projects {
+    width: 80%;
+    margin: 0 0 var(--spacing-lg) 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    max-width: var(--max-width);
+    z-index: 2;
   }
 
   footer .right h4 {
