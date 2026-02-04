@@ -1,74 +1,71 @@
 {
   "cardsActivity": [
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_actividad_1",
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
       "tittle": "M1_python_actividad_1",
       "description": "Here I create a CV using a format already created in canva, following this format I make this project",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_actividad_1",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_actividad_2",
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_2",
       "tittle": "M1_python_actividad_2",
       "description": "This activity is compound by 10 task when was neccesary to make desicions using conditionals, conditionals that were used were if, elif and else",
       "technologie": "assets/logos/python-logo.png",
       "technologie1": "assets/logos/draw-logo.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_actividad_2",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_actividad_3",
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_3",
       "tittle": "M1_python_actividad_3",
       "description": "This was the first glance to the dictionaries, the task here just were two, to put on practice what dictionaries are",
       "technologie": "assets/logos/python-logo.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_actividad_3",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_actividad_4",
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_4",
       "tittle": "M1_python_actividad_4",
       "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
       "technologie": "assets/logos/python-logo.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_actividad_4",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_actividad_5",
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_5",
       "tittle": "M1_python_actividad_5",
       "description": "This activity was the first glance to data persistence using a csv format to store and handle it, and get more confidence using functions",
       "technologie": "assets/logos/html-file.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_actividad_5",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ],
   "cardsMoodle": [
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
       "tittle": "M1_python_moodle_week_1",
-      "technologie": "assets/logos/html-file.png",
-      "technologie1": "assets/logos/html-file.png",
-      "technologie2": "assets/logos/html-file.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
+      "technologie": "assets/logos/python-logo.png",
+      "technologie1": "assets/logos/draw-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_moodle_week_2",
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_2",
       "tittle": "M1_python_moodle_week_2",
-      "technologie": "assets/logos/html-file.png",
-      "technologie1": "assets/logos/html-file.png",
-      "technologie2": "assets/logos/html-file.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_moodle_week_2",
+      "technologie": "assets/logos/python-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "tittleGitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
       "tittle": "M1_python_moodle_week_3",
-      "technologie": "assets/logos/html-file.png",
-      "technologie1": "assets/logos/html-file.png",
-      "technologie2": "assets/logos/html-file.png",
-      "logoGitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "technologie": "assets/logos/python-logo.png",
+      "technologie1": "assets/logos/draw-logo.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ],
+  "finalTests": [
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
+      "tittle": "M1_python_test_1",
+      "description": "I start to modularize code, due to identify some patterns that let me see that a bunch of code it was been repited along all the code and some functios had a strong relation among them, based on this hypotesis I took the decision to work on each one using something called atomic design, where we have atoms(functios stored inside helpers folder),molecules(functions stored inside, services folder), organism(functions stored inside modules folder) and templates(union of all of them on the app folder)",
+      "technologie": "assets/logos/python-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ]

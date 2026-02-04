@@ -13,7 +13,7 @@ const renderCardsActivitie = async function (parentEl) {
     console.log(card);
     const html = `
     <div class="project">
-      <h3><a href="${card.tittleGitHref}" target="_blank" rel="noopener noreferrer">${card.tittle}</a></h3>
+      <h3><a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">${card.tittle}</a></h3>
       <p>${card.description}</p>
 
       <div class="logos">
@@ -21,7 +21,7 @@ const renderCardsActivitie = async function (parentEl) {
           <img src="${card.technologie}" alt="" />
           ${card.technologie1 ? `<img src="${card.technologie1}" alt="" />` : ""}
         </div>
-        <a href="${card.logoGitHref}" target="_blank" rel="noopener noreferrer">
+        <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
           <img src="${card.gitLogo}" alt="" />
         </a>
       </div>
@@ -44,14 +44,14 @@ const renderCardsMoodle = async function (parentEl) {
   cardsMoodle.forEach((card) => {
     const html = `
     <div class="project">
-      <h3><a href="${card.tittleGitHref}">${card.tittle}</a></h3>
+      <h3><a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">${card.tittle}</a></h3>
       <div class="logos">
         <div class="technologies">
           <img src="${card.technologie}" alt="" />
           ${card.technologie1 ? `<img src="${card.technologie1}" alt="" />` : ""}
           ${card.technologie2 ? `<img src="${card.technologie2}" alt="" />` : ""}
         </div>
-        <a href="${card.logoGitHref}">
+        <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
           <img src="${card.gitLogo}" alt="" />
         </a>
       </div>
@@ -62,3 +62,34 @@ const renderCardsMoodle = async function (parentEl) {
 };
 
 renderCardsMoodle("moodleProjects");
+
+// Render test
+
+const renderTest = async function (parentEl) {
+  const container = document.querySelector(`#${parentEl}`);
+
+  const { finalTests } = await getCards();
+
+  finalTests.forEach((card) => {
+    const html = `
+      <div class="project">
+    <h3>
+      <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">M1_python_test_1</a
+      >
+    </h3>
+    <p>${card.description}</p>
+    <div class="logos">
+      <div class="technologies">
+        <img src="${card.technologie}" alt="" />
+      </div>
+      <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
+        <img src="assets/logos/github-logo.png" alt="" />
+      </a>
+    </div>
+  </div>
+    `;
+    container.insertAdjacentHTML("beforeend", html);
+  });
+};
+
+renderTest("finalTests");
