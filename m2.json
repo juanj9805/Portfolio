@@ -1,0 +1,56 @@
+{
+  "cardsActivity": [
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
+      "tittle": "M2_html_css_actividad_1",
+      "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
+      "tittle": "M2_html_css_actividad_1",
+      "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ],
+  "cardsMoodle": [
+    {
+      "gitHref": "https://github.com/juanj9805/M2_html_css_moodle_week_3",
+      "tittle": "M2_html_css_moodle_week_1",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M2_html_css_moodle_week_3",
+      "tittle": "M2_html_css_moodle_week_2",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "technologie2": "assets/logos/js-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M2_html_css_moodle_week_3",
+      "tittle": "M2_html_css_moodle_week_3",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "technologie2": "assets/logos/js-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ],
+  "finalTests": [
+    {
+      "gitHref": "https://github.com/juanj9805/M2_html_css_prueba_1",
+      "tittle": "M2_html_css_test_1",
+      "description": "Here The idea was to replicate a web design using a figma template an make it responsive",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/css-file.png",
+      "technologie2": "assets/logos/js-file.png",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ]
+}

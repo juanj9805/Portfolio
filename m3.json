@@ -1,0 +1,76 @@
+{
+  "cardsActivity": [
+    {
+      "gitHref": "https://github.com/juanj9805/M3_js_actividad_1",
+      "tittle": "M3_js_actividad_1",
+      "description": "Here I create a CV using a format already created in canva, following this format I make this project",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M3_js_actividad_2",
+      "tittle": "M3_js_actividad_2",
+      "description": "This activity is compound by 10 task when was neccesary to make desicions using conditionals, conditionals that were used were if, elif and else",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M3_js_actividad_3",
+      "tittle": "M3_js_actividad_3",
+      "description": "This was the first glance to the dictionaries, the task here just were two, to put on practice what dictionaries are",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ],
+  "cardsMoodle": [
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
+      "tittle": "M3_js_moodle_week_1",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_2",
+      "tittle": "M3_js_moodle_week_2",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "tittle": "M3_js_moodle_week_3",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    },
+    {
+      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "tittle": "M3_js_moodle_week_1",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ],
+  "finalTests": [
+    {
+      "gitHref": "https://github.com/juanj9805/M3_js_prueba_1",
+      "tittle": "M3_js_test_1",
+      "description": "I start to modularize code, due to identify some patterns that let me see that a bunch of code it was been repited along all the code and some functios had a strong relation among them, based on this hypotesis I took the decision to work on each one using something called atomic design, where we have atoms(functios stored inside helpers folder),molecules(functions stored inside, services folder), organism(functions stored inside modules folder) and templates(union of all of them on the app folder)",
+      "technologie": "assets/logos/html-file.png",
+      "technologie1": "assets/logos/js-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
+      "gitLogo": "assets/logos/github-logo.png"
+    }
+  ]
+}
