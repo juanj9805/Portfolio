@@ -1,17 +1,18 @@
 {
   "cardsActivity": [
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
+      "gitHref": "https://github.com/juanj9805/M2_html_css_actividad_1",
       "tittle": "M2_html_css_actividad_1",
-      "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
+      "description": "Here was neccesary to create a login using semantic html css and bootstrap as a librarie to add styles on it",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
+      "technologie2": "assets/logos/bootstrap-logo.svg",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
+      "gitHref": "https://github.com/juanj9805/M2_html_css_actividad_1",
       "tittle": "M2_html_css_actividad_1",
-      "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
+      "description": "On this activitie was neccesary to reply the ui of alkosto, this help me to handle in a better way the flexbox and grid",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
       "gitLogo": "assets/logos/github-logo.png"

@@ -34,7 +34,8 @@
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_5",
       "tittle": "M1_python_actividad_5",
       "description": "This activity was the first glance to data persistence using a csv format to store and handle it, and get more confidence using functions",
-      "technologie": "assets/logos/html-file.png",
+      "technologie": "assets/logos/python-logo.png",
+      "technologie1": "assets/logos/csv-file.png",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ],
