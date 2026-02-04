@@ -1,300 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="#home-id">Home</a>
-        </li>
-        <li>
-          <a href="#about-id">About me</a>
-        </li>
-        <li>
-          <a href="#activity-projects-id">Projects</a>
-        </li>
-        <li>
-          <a href="#projects-moodle-id">Moodle</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="home-section" id="home-id">
-      <div class="info">
-        <div class="name">
-          <h2>Juan Jose Barrera Upegui</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <ul>
+      <li>
+        <a target="_blank" href="#home-id">Home</a>
+      </li>
+      <li>
+        <a href="#about-id">About me</a>
+      </li>
+      <li>
+        <a href="#activity-projects-id">Projects</a>
+      </li>
+      <li>
+        <a href="#projects-moodle-id">Moodle</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- HOME SECTION -->
+  <section class="home-section" id="home-id">
+    <div class="info">
+      <div class="name">
+        <h2>Juan Jose Barrera Upegui</h2>
+      </div>
+      <h1>PORTFOLIO</h1>
+      <div class="role">
+        <h2>Front-end Developer</h2>
+      </div>
+    </div>
+    <div class="buttons">
+      <a class="btn-contact" href="#contact-id">Contact me</a>
+      <a class="btn-download-cv" href="https://juanj9805.github.io/M1_python_actividad_1/">Show CV</a>
+    </div>
+    <img class="draw-church" src="assets/draws/draw-church.png" alt="" />
+    </div>
+  </section>
+  <!-- MAIN SECTION -->
+  <main>
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about-id">
+      <h2>About me</h2>
+      <div class="papper-about-section">
+        <div class="two-column">
+          <div class="col-left">
+            <img class="draw-mine" src="assets/draws/draw-mine.png" alt="">
+          </div>
+          <div class="col-right">
+            <p>Junior Bilingual Developer with training in Software Analysis and Development, and knowledge of
+              JavaScript and UX/UI Design, focused on creating user-centered digital solutions that combine technical
+              precision with an excellent user experience.
+              I stand out for my quick learning ability, collaboration in agile environments, and my capacity to add
+              value at every stage of development, adapting to the current challenges of modern companies.</p>
+          </div>
         </div>
-        <h1>PORTFOLIO</h1>
-        <div class="role">
-          <h2>Front-end Developer</h2>
-        </div>
       </div>
-      <div class="buttons">
-          <a class="btn-contact" href="#contact-id">Contact me</a>
-          <a class="btn-download-cv" href="https://juanj9805.github.io/M1_python_actividad_1/">Show CV</a>
-      </div>
-      <img class="draw-church" src="assets/draws/draw-church.png" alt="" />
-      </div>
+      <img class="cupula-draw" src="assets/draws/draw-cupula.png" alt="">
+      <img class="coffe" src="assets/decorations/coffe-stain-decoration.png" alt="">
     </section>
-    <main>
-      <!-- <div class="home-section-bg"> -->
+    <!-- PROJECTS SECTION AND MODULES -->
+    <section class="projects-section" id="activity-projects-id">
+      <h2>Modules</h2>
+      <div class="modules-section">
+        <img src="assets/draws/draw-python.svg" alt="">
+        <img src="assets/draws/draw-html-css.svg" alt="">
+        <img src="assets/draws/draw-python.svg" alt="">
       </div>
-      <section class="about-section" id="about-id">
-        <h2>About me</h2>
-        <div class="papper-about-section">
-          <div class="two-column">
-            <div class="col-left">
-              <img class="draw-mine" src="assets/draws/draw-mine.png" alt="">
-            </div>
-            <div class="col-right">
-              <p>Junior Bilingual Developer with training in Software Analysis and Development, and knowledge of JavaScript and UX/UI Design, focused on creating user-centered digital solutions that combine technical precision with an excellent user experience.
-I stand out for my quick learning ability, collaboration in agile environments, and my capacity to add value at every stage of development, adapting to the current challenges of modern companies.</p>
-            </div>
-          </div>
-        </div>
-        <img class="cupula-draw" src="assets/draws/draw-cupula.png" alt="">
-        <img class="coffe" src="assets/decorations/coffe-stain-decoration.png" alt="">
+      <h2>Activity projects</h2>
+      <section id="robinProjects" class="grid-projects">
+        <!-- GRID ACTIVITY PROJECTS -->
       </section>
-      <section class="projects-section" id="activity-projects-id">
-        <h2>Activity projects</h2>
-        <div class="grid-projects">
-
-          <div class="project">
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_actividad_1">M1_python_actividad_1</a>
-            </h3>
-            <p>Here I create a CV using a format already created in canva, following this format I make this project</p>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/html-file.png" alt="">
-                <img src="assets/logos/css-file.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_actividad_1">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_actividad_2">M1_python_actividad_2</a>
-            </h3>
-            
-            <p>This activity is compound by 10 task when was neccesary to make desicions using conditionals, conditionals that were used were if, elif and else </p>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-                <img src="assets/logos/draw-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_actividad_2">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_actividad_3">M1_python_actividad_3</a>
-            </h3>
-            
-            <p>This was the first glance to the dictionaries, the task here just were two, to put on practice what dictionaries are</p>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_actividad_3">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_actividad_4">M1_python_actividad_4</a>
-            </h3>
-            
-            <p>Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break <em>DRY</em> principles </p>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_actividad_4">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_actividad_5">M1_python_actividad_5</a>
-            </h3>
-            
-            <p>This activity was the first glance to data persistence using a csv format to store and handle it, and get more confidence using functions</p>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-                <img src="assets/csv-file.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_actividad_5">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
+      <section class="moodle-section">
+        <div class="grid-projects" id="moodleProjects"  >
         </div>
-      </div>
-        </div>
-        </div>
-        <section class="moodle-section" id="projects-moodle-id">
-        <h2>Moodle projects</h2>
-        <div class="grid-projects">
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_1">M1_python_moodle_week_1</a>
-            </h3>
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-                <img src="assets/logos/draw-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_1">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-          
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_2">M1_python_moodle_week_2</a>
-            </h3>
-            
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_2">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
 
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_3">M1_python_moodle_week_3</a>
-            </h3>
-            
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-                <img src="assets/logos/draw-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_3">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M2_html_css_moodle_week_3">M2_html_css_moodle_week_3</a>
-            </h3>
-            
-            
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/html-file.png" alt="">
-                <img src="assets/logos/css-file.png" alt="">
-                <img src="assets/logos/js-file.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M2_html_css_moodle_week_3">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
+        <!-- Moodle PROJECTS-->
       </section>
-
       <section class="test-section" id="projects-test-id">
-        <h2>Test</h2>
-        <div class="grid-projects">
-          
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_1">M1_python_test_1</a>
-            </h3>
-
-            <p>I start to <em>modularize</em> code, due to identify some patterns that let me see that a bunch of code it was been repited along all the code and some functios had a strong relation among them, based on this hypotesis I took the decision to work on each one using something called atomic design, where we have atoms(functios stored inside helpers folder), molecules(functions stored inside, services folder), organism(functions stored inside modules folder) and templates(union of all of them on the app folder)</p>
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/python-logo.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M1_python_moodle_week_1">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-        </div>
-
-          <div class="project"> 
-            <h3>
-              <a href="https://github.com/juanj9805/M2_html_css_prueba_1">M2_html_css_test_2</a>
-            </h3>
-
-            <p>I start to <em>modularize</em> code, due to identify some patterns that let me see that a bunch of code it was been repited along all the code and some functios had a strong relation among them, based on this hypotesis I took the decision to work on each one using something called atomic design, where we have atoms(functios stored inside helpers folder), molecules(functions stored inside, services folder), organism(functions stored inside modules folder) and templates(union of all of them on the app folder)</p>
-            <div class="logos">
-              <div class="technologies">
-                <img src="assets/logos/html-file.png" alt="">
-                <img src="assets/logos/css-file.png" alt="">
-                <img src="assets/logos/js-file.png" alt="">
-              </div>
-              <a href="https://github.com/juanj9805/M2_html_css_prueba_1">
-                <img src="assets/logos/github-logo.png" alt="">
-              </a>
-            </div>
-        </div>
-      </div>
+        <!-- TEST SECTION -->
       </section>
-    </main>
+  </main>
 
-    <footer>
-      <div class="left">
-        <img class="complete-draw-church" src="assets/draws/draw-footer.png" alt="">
+  <!-- <footer>
+    <div class="left">
+      <img class="complete-draw-church" src="assets/draws/draw-footer.png" alt="">
 
+    </div>
+    <div class="right">
+      <h4>
+        Juan Jose Barrera Upegui
+      </h4>
+      <div class="social-media" id="contact-id">
+        <a href="https://github.com/juanj9805">
+          <img src="assets/logos/github-logo.png" alt="">
+        </a>
+        <a href="https://www.linkedin.com/in/juan-jose-barrera-upegui-01ba8a240/">
+          <img src="assets/logos/linkedin-logo.webp" alt="">
+        </a>
       </div>
-      <div class="right">
-        <h4>
-          Juan Jose Barrera Upegui
-        </h4>
-        <div class="social-media" id="contact-id">
-          <a href="https://github.com/juanj9805">
-            <img src="assets/logos/github-logo.png" alt="">
-          </a>
-          <a href="https://www.linkedin.com/in/juan-jose-barrera-upegui-01ba8a240/">
-            <img src="assets/logos/linkedin-logo.webp" alt="">
-          </a>
-        </div>
-      </div>
-      </footer>
-    
-  </body>
+    </div>
+  </footer> -->
+</body>
 </html>

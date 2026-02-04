@@ -332,12 +332,36 @@ main {
 }
 
 .cupula-draw:hover {
-  transform: rotate(-4deg) scale(1.05, 1.05);
+  transform: rotate(4deg) scale(1.05, 1.05);
+}
+
+/* MODULES SECTION */
+
+.modules-section {
+  background: url(assets/backgorunds/background-wooden.png) center/cover no-repeat;
+  width: 100%;
+  margin: var(--spacing-xl) 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.modules-section img {
+  background: url(assets/backgorunds/background-wooden.png) center/cover no-repeat;
+  width: 15%;
+  z-index: 3;
+  transition: 1s ease-in-out;
+}
+
+.modules-section img:hover {
+  transform: rotate(-2deg) scale(1.03, 1.03);
 }
 
 /* PROJECTS SECTION */
 
 .projects-section {
+  background: url(assets/backgorunds/background-wooden.png) center/cover no-repeat;
   width: 100%;
   margin: var(--spacing-xl) 0 0 0;
   display: flex;
