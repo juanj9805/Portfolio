@@ -1,9 +1,9 @@
 {
   "cardsActivity": [
     {
-      "gitHref": "https://github.com/juanj9805/M3_js_actividad_1",
+      "gitHref": "https://github.com/juanj9805/M3_js_moodle_week_1",
       "tittle": "M3_js_actividad_1",
-      "description": "Here I create a CV using a format already created in canva, following this format I make this project",
+      "description": "through the use of prompt I created a program that determine if someone is adult",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
@@ -30,11 +30,10 @@
   ],
   "cardsMoodle": [
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_1",
+      "gitHref": "https://github.com/juanj9805/M3_js_moodle_week_1",
       "tittle": "M3_js_moodle_week_1",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
-      "technologie2": "assets/logos/bootstrap-logo.svg",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
@@ -55,7 +54,7 @@
     },
     {
       "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
-      "tittle": "M3_js_moodle_week_1",
+      "tittle": "M3_js_moodle_week_4",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
