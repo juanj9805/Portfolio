@@ -325,15 +325,42 @@ main {
 
 .cupula-draw {
   position: absolute;
-  width: 15%;
-  bottom: calc(var(--spacing-xl) * -3);
-  right: 0;
+  width: 25%;
+  bottom: calc(var(--spacing-xl) * -8);
+  right: calc(var(--spacing-xl) * -2);
   z-index: 3;
   transition: 1s ease-in-out;
 }
 
 .cupula-draw:hover {
   transform: rotate(4deg) scale(1.05, 1.05);
+}
+
+/* Kepler */
+
+.kepler-section {
+  padding: var(--spacing-xl) 0;
+  background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.kepler-section h2 {
+  margin: var(--spacing-lg) 0;
+  background: #bcaf97;
+  padding: var(--spacing-sm);
+  border-radius: var(--standard-border-radius);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.25),
+    /* inner shadow */ 0 3px 6px rgba(0, 0, 0, 0.4); /* outer shadow */
 }
 
 /* MODULES SECTION */
