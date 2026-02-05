@@ -209,7 +209,7 @@ nav ul li:hover {
   width: 25%;
   transform: rotate(6deg);
   transition: var(--standard-transition);
-  bottom: calc(var(--spacing-xl) * -3);
+  bottom: calc(var(--spacing-xl) * -1);
   left: calc(var(--spacing-xl) * -1);
   z-index: 1;
 }
@@ -326,8 +326,8 @@ main {
 .cupula-draw {
   position: absolute;
   width: 25%;
-  bottom: calc(var(--spacing-xl) * -4);
-  right: 0;
+  bottom: calc(var(--spacing-xl) * -8);
+  right: calc(var(--spacing-xl) * -2);
   z-index: 3;
   transition: 1s ease-in-out;
 }
@@ -336,32 +336,69 @@ main {
   transform: rotate(4deg) scale(1.05, 1.05);
 }
 
+/* Kepler */
+
+.kepler-section {
+  padding: var(--spacing-xl) 0;
+  background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.kepler-section h2 {
+  margin: var(--spacing-lg) 0;
+  background: #bcaf97;
+  padding: var(--spacing-sm);
+  border-radius: var(--standard-border-radius);
+  font-size: var(--font-size-xl);
+  color: var(--color-accent);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.25),
+    /* inner shadow */ 0 3px 6px rgba(0, 0, 0, 0.4); /* outer shadow */
+}
+
 /* MODULES SECTION */
 
 .modules-section {
+  background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat;
   width: 100%;
-  margin: var(--spacing-xl) 0 0 0;
+  /* margin: var(--spacing-xl) 0 0 0; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 0 0 var(--spacing-xl) 0;
 }
 
 .modules-section img {
-  width: 15%;
+  width: 25%;
   z-index: 3;
+  box-shadow: var(--standard-box-shadow);
 }
 
 .modules-section img:hover {
   cursor: pointer;
 }
 
+.modules-section div {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--max-width);
+}
+
 /* PROJECTS SECTION */
 
 .projects-section {
-  background: url(assets/backgorunds/background-wooden.png) center/cover
-    no-repeat;
+  /* background: url(assets/backgorunds/background-wooden.png) center/cover
+    no-repeat; */
   width: 100%;
-  margin: var(--spacing-xl) 0 0 0;
+  /* margin: var(--spacing-xl) 0 0 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,6 +512,7 @@ main {
 .moodle-section {
   display: flex;
   flex-direction: column;
+  padding: 0 0 var(--spacing-lg) 0;
   align-items: center;
   width: 100%;
   position: relative;
@@ -552,9 +590,11 @@ main {
   position: relative;
   background: url(assets/backgorunds/background-wooden.png) center/cover
     no-repeat;
+  padding: 0 0 var(--spacing-lg) 0;
 }
 
 .test-section .project {
+  max-width: var(--max-width);
   background: url(assets/decorations/papper-decoration.png) center/cover
     no-repeat;
   border: none;
