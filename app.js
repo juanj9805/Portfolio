@@ -21,6 +21,7 @@ const renderCardsActivitie = async function (parentEl, jsonFile) {
           <img src="${card.technologie}" alt="" />
           ${card.technologie1 ? `<img src="${card.technologie1}" alt="" />` : ""}
           ${card.technologie2 ? `<img src="${card.technologie2}" alt="" />` : ""}
+          ${card.technologie3 ? `<img src="${card.technologie3}" alt="" />` : ""}
         </div>
         <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
           <img src="${card.gitLogo}" alt="" />
@@ -49,6 +50,7 @@ const renderCardsMoodle = async function (parentEl, jsonFile) {
           <img src="${card.technologie}" alt="" />
           ${card.technologie1 ? `<img src="${card.technologie1}" alt="" />` : ""}
           ${card.technologie2 ? `<img src="${card.technologie2}" alt="" />` : ""}
+          ${card.technologie3 ? `<img src="${card.technologie3}" alt="" />` : ""}
         </div>
         <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
           <img src="${card.gitLogo}" alt="" />
@@ -81,6 +83,7 @@ const renderTest = async function (parentEl, jsonFile) {
         <img src="${card.technologie}" alt="" />
         ${card.technologie1 ? `<img src="${card.technologie1}" alt="" />` : ""}
         ${card.technologie2 ? `<img src="${card.technologie2}" alt="" />` : ""}
+        ${card.technologie3 ? `<img src="${card.technologie3}" alt="" />` : ""}
       </div>
       <a href="${card.gitHref}" target="_blank" rel="noopener noreferrer">
         <img src="assets/logos/github-logo.png" alt="" />

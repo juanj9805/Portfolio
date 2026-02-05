@@ -3,7 +3,7 @@
     {
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_1",
       "tittle": "M1_python_actividad_1",
-      "description": "Here I create a CV using a format already created in canva, following this format I make this project",
+      "description": "In this project, I created a CV using an existing Canva template and followed its structure throughout the design.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
       "gitLogo": "assets/logos/github-logo.png"
@@ -11,7 +11,7 @@
     {
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_2",
       "tittle": "M1_python_actividad_2",
-      "description": "This activity is compound by 10 task when was neccesary to make desicions using conditionals, conditionals that were used were if, elif and else",
+      "description": "This activity consists of 10 tasks that required making decisions using conditional statements such as if, elif, and else.",
       "technologie": "assets/logos/python-logo.png",
       "technologie1": "assets/logos/draw-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
@@ -19,21 +19,21 @@
     {
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_3",
       "tittle": "M1_python_actividad_3",
-      "description": "This was the first glance to the dictionaries, the task here just were two, to put on practice what dictionaries are",
+      "description": "This was a first look at dictionaries, with only two tasks designed to practice and understand how dictionaries work.",
       "technologie": "assets/logos/python-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_4",
       "tittle": "M1_python_actividad_4",
-      "description": "Was neccesary to display a options menu to the user and make desicions based on that input, here I started to wrapping all the logic inside functions to avoid break DRY principles",
+      "description": "It was necessary to display an options menu to the user and make decisions based on the user’s input. At this stage, I began wrapping the logic inside functions to follow the DRY principle.",
       "technologie": "assets/logos/python-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
       "gitHref": "https://github.com/juanj9805/M1_python_actividad_5",
       "tittle": "M1_python_actividad_5",
-      "description": "This activity was the first glance to data persistence using a csv format to store and handle it, and get more confidence using functions",
+      "description": "This activity provided a first look at data persistence using the CSV format to store and handle data, and helped build confidence in using functions.",
       "technologie": "assets/logos/python-logo.png",
       "technologie1": "assets/logos/csv-file.png",
       "gitLogo": "assets/logos/github-logo.png"

@@ -3,16 +3,17 @@
     {
       "gitHref": "https://github.com/juanj9805/M3_js_actividad_1",
       "tittle": "M3_js_actividad_1",
-      "description": "kfc",
+      "description": "In this activity, I emulated a login system using JSON Server as a mock database and implemented guards to protect the kfc page",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
+      "technologie3": "assets/logos/json-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
       "gitHref": "https://github.com/juanj9805/M3_js_actividad_2",
       "tittle": "M3_js_actividad_2",
-      "description": "This activity is compound by 10 task when was neccesary to make desicions using conditionals, conditionals that were used were if, elif and else",
+      "description": "In this activity, I created a form to gather user data, stored the information in local storage, and rendered a table based on the saved values.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
@@ -21,10 +22,11 @@
     {
       "gitHref": "https://github.com/juanj9805/M3_js_actividad_3",
       "tittle": "M3_js_actividad_3",
-      "description": "This was the first glance to the dictionaries, the task here just were two, to put on practice what dictionaries are",
+      "description": "This activity simulated the final test and required building a CRUD system to manage two role-based views: admin and user. The admin manages the data that populates the e-commerce landing page, while the user can purchase products through a shopping cart.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
+      "technologie3": "assets/logos/json-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ],
@@ -37,7 +39,7 @@
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_2",
+      "gitHref": "https://github.com/juanj9805/M3_js_moodle_week_1",
       "tittle": "M3_js_moodle_week_2",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
@@ -45,19 +47,21 @@
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "gitHref": "https://github.com/juanj9805/M3_js_moodle_week_4/tree/main",
       "tittle": "M3_js_moodle_week_3",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
+      "technologie3": "assets/logos/json-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     },
     {
-      "gitHref": "https://github.com/juanj9805/M1_python_moodle_week_3",
+      "gitHref": "https://github.com/juanj9805/M3_js_moodle_week_4/tree/main",
       "tittle": "M3_js_moodle_week_4",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
+      "technologie3": "assets/logos/json-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ],
@@ -65,10 +69,11 @@
     {
       "gitHref": "https://github.com/juanj9805/M3_js_prueba_1",
       "tittle": "M3_js_test_1",
-      "description": "I start to modularize code, due to identify some patterns that let me see that a bunch of code it was been repited along all the code and some functios had a strong relation among them, based on this hypotesis I took the decision to work on each one using something called atomic design, where we have atoms(functios stored inside helpers folder),molecules(functions stored inside, services folder), organism(functions stored inside modules folder) and templates(union of all of them on the app folder)",
+      "description": "In this project, I developed a task management dashboard with two user roles—admin and user. The implementation included full CRUD operations and route guards to protect application routes, using JSON Server as a mock database.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/js-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
+      "technologie3": "assets/logos/json-logo.png",
       "gitLogo": "assets/logos/github-logo.png"
     }
   ]

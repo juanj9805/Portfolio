@@ -3,7 +3,7 @@
     {
       "gitHref": "https://github.com/juanj9805/M2_html_css_actividad_1",
       "tittle": "M2_html_css_actividad_1",
-      "description": "Here was neccesary to create a login using semantic html css and bootstrap as a librarie to add styles on it",
+      "description": "In this activity, I created a login interface using semantic HTML, CSS, and Bootstrap for styling.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
       "technologie2": "assets/logos/bootstrap-logo.svg",
@@ -12,7 +12,7 @@
     {
       "gitHref": "https://github.com/juanj9805/M2_html_css_actividad_2",
       "tittle": "M2_html_css_actividad_2",
-      "description": "On this activitie was neccesary to reply the ui of alkosto, this help me to handle in a better way the flexbox and grid",
+      "description": "In this activity, I replicated the Alkosto UI, which helped me improve my understanding of Flexbox and Grid.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
       "gitLogo": "assets/logos/github-logo.png"
@@ -47,7 +47,7 @@
     {
       "gitHref": "https://github.com/juanj9805/M2_html_css_prueba_1",
       "tittle": "M2_html_css_test_1",
-      "description": "Here The idea was to replicate a web design using a figma template an make it responsive",
+      "description": "In this activity, the objective was to replicate a web design using a Figma template and adapt it to be fully responsive, ensuring proper layout, spacing, and usability across multiple screen sizes and devices.",
       "technologie": "assets/logos/html-file.png",
       "technologie1": "assets/logos/css-file.png",
       "technologie2": "assets/logos/js-file.png",
