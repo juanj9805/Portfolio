@@ -96,6 +96,7 @@ const finalTests = document.querySelector("#finalTests");
 const m1 = document.querySelector("#m1");
 const m2 = document.querySelector("#m2");
 const m3 = document.querySelector("#m3");
+const m4 = document.querySelector("#m4");
 
 window.addEventListener("DOMContentLoaded", function () {
   renderCardsActivitie("robinProjects", "m3.json");
@@ -106,7 +107,7 @@ window.addEventListener("DOMContentLoaded", function () {
 m1.addEventListener("click", function () {
   robinProjects.innerHTML = "";
   moodleProjects.innerHTML = "";
-  innerHTML = "";
+  finalTests.innerHTML = "";
 
   renderCardsActivitie("robinProjects", "m1.json");
   renderCardsMoodle("moodleProjects", "m1.json");
@@ -116,7 +117,7 @@ m1.addEventListener("click", function () {
 m2.addEventListener("click", function () {
   robinProjects.innerHTML = "";
   moodleProjects.innerHTML = "";
-  innerHTML = "";
+  finalTests.innerHTML = "";
   renderCardsActivitie("robinProjects", "m2.json");
   renderCardsMoodle("moodleProjects", "m2.json");
   renderTest("finalTests", "m2.json");
@@ -125,8 +126,17 @@ m2.addEventListener("click", function () {
 m3.addEventListener("click", function () {
   robinProjects.innerHTML = "";
   moodleProjects.innerHTML = "";
-  innerHTML = "";
+  finalTests.innerHTML = "";
   renderCardsActivitie("robinProjects", "m3.json");
   renderCardsMoodle("moodleProjects", "m3.json");
   renderTest("finalTests", "m3.json");
+});
+
+m4.addEventListener("click", function () {
+  robinProjects.innerHTML = "";
+  moodleProjects.innerHTML = "";
+  finalTests.innerHTML = "";
+  renderCardsActivitie("robinProjects", "m4.json");
+  renderCardsMoodle("moodleProjects", "m4.json");
+  renderTest("finalTests", "m4.json");
 });
